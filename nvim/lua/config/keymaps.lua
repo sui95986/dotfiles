@@ -104,3 +104,4 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
 vim.api.nvim_set_keymap('n', '<F5>', ':Gitsigns preview_hunk<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>blame', ':Gitsigns toggle_current_line_blame<CR>', { noremap = true, silent = true })
 
+

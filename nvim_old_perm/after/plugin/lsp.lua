@@ -33,7 +33,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { 'ts_ls', 'lua_ls', 'bashls', 'jsonls', 'cssls', 'html', 'yamlls' },
+	ensure_installed = { 'rust_analyzer', 'ts_ls', 'lua_ls', 'bashls', 'jsonls', 'cssls', 'html', 'yamlls' },
 	handlers = {
 		function(server_name)
 			require('lspconfig')[server_name].setup({})
@@ -99,6 +99,7 @@ lspconfig.ts_ls.setup({
         require('nvim-lsp-ts-utils').setup_client(client)
     end,
 })
+
 
 ------
 -- AUTOCOMPLETE CONFIGURATION
