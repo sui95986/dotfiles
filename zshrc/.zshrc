@@ -9,6 +9,7 @@ unalias ls 2>/dev/null
 ls() {
     exa --icons --color=auto "$@"
 }
+
 alias dev="cd ~/development"
 alias ll="exa -lah --icons"
 alias tree="exa --tree --icons"
